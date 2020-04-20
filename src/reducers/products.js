@@ -33,6 +33,12 @@ export default function productsReducer (state = initialState, action) {
         products,
         error: null
       }
+    case types.REMOVE_ALL_FROM_CART:
+      return {
+        ...state,
+        products: state.products.map(product => ({ ...product, isChecked: false }) ),
+        error: null
+      }
     case types.ADD_ID_FOR_FILTRATION:
       const isExist = state.filters.has(action.category.id);
 

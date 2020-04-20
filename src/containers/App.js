@@ -8,7 +8,7 @@ import {
 
 import CartContainer from './CartContainer';
 import ProductContainer from './ProductContainer';
-import HomePage from './HomePage';
+import HomePage from '../components/HomePage';
 
 function App() {
   return (
