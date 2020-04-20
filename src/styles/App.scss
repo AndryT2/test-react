@@ -1,0 +1,63 @@
+.App {
+  text-align: center;
+
+  .App-header {
+    min-height: 50px;
+    background-color: rgba(205, 209, 211, 0.1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: calc(10px + 2vmin);
+    color: rgb(21, 25, 27);
+
+    .filter {
+      display: flex;
+      flex-direction: row;
+      flex: 0 0 30%;
+      text-transform: capitalize;
+
+      li {
+        margin: 0 20px;
+        font-size: 16px;
+        list-style-type: none;
+      }
+    }
+    .info {
+      display: flex;
+      flex: 0 0 15%;
+      align-items: center;
+      justify-content: flex-end;
+      .cost {
+        font-size: 16px;
+        margin-right: 20px;
+      }
+      .cart {
+        display: flex;
+        justify-content: center;
+        margin-right: 20px;
+        align-items: center;
+        flex: 0 0 120px;
+        height: 35px;
+        background-color: #49af19;
+        border: 1px solid #40901a;
+        border-radius: 3px;
+
+        a {
+          font-size: 16px;
+          color: white;
+          font-weight: 600;
+          text-decoration: none;
+        }
+
+        .count {
+          margin-left: 7px;
+          color: white;
+        }
+      }
+    }
+
+  }
+}
+
+
